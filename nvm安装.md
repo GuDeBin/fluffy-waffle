@@ -18,7 +18,7 @@ activate nvm by sourcing it from your shell: . ./nvm.sh
 
 其实如果我只是想安装，直接复制后面的命令即可。
 
-更根本的是我不知道 bash 命令，他就是一个·，也就是 · 脚本文件
+更根本的是我不知道 bash 命令，他就是一个 · ，也就是 · 脚本文件
 
 哎
 

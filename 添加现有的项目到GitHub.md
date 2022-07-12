@@ -1,7 +1,9 @@
 # 添加现有的项目到 GitHub 库上
 
 1. git remote add origin git@github.com:GuDeBin/glowing-octo-umbrella.git(仓库地址)
+
 2. git branch -M main
+
 3. git push -u origin main
 
 不行啊

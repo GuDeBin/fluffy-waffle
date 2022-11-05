@@ -24,3 +24,28 @@
 使用代理影响这个 npm 和 node 吗
 
 大概率是网络问题
+
+```sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
+```sh
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+## 换源
+
+export NVM_NODEJS_ORG_MIRROR
+
+npm
+
+https://registry.npmjs.org/
+
+npm config set registry
+
+https://registry.npmmirror.com/
+
+新开一篇文章[开发换源](./%E5%BC%80%E5%8F%91%E6%8D%A2%E6%BA%90.md)

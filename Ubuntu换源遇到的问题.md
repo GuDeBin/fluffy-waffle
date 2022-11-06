@@ -20,23 +20,29 @@ sudo cp sources.list sources.list.bak
 2. 删除原先的源文件内容
 
 ```shell
-sudo vi /etc/apt/sources.list
+sudo vim /etc/apt/sources.list
 ```
 
-在 vi 编辑器里，按下 i 键进入输入模式，左下角会出现 Insert 字符，直接使用退格键删除原先的内容
+在 vim 编辑器里
+
+直接输入 dG，因为刚进入就是命令模式，dG 命令是将从光标开始到最后一行全部删除
+
+按下 i 键进入输入模式，左下角会出现 Insert 字符
 
 3. 复制源
 
-[阿里源](https://developer.aliyun.com/mirror/ubuntu?spm=a2c6h.13651102.0.0.77561b11tcYvqo)
+[阿里源](https://developer.aliyun.com/mirror/ubuntu)
 
 [清华源](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
 Ctrl+C 和 Ctrl+V
 
+按下:wq 进入底线命令模式，wq 是保存并退出文件
+
 4. 终端执行命令
 
 ```shell
-sudo apt update
+sudo apt update && sudo apt upgrade -y
 ```
 
 ## 总结

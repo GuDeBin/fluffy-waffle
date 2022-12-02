@@ -79,6 +79,11 @@ deb http://security.ubuntu.com/ubuntu/ jammy-security multiverse
 # deb-src http://security.ubuntu.com/ubuntu/ jammy-security multiverse
 ```
 
+```sh
+sudo sed -i "s@http://.*archive.ubuntu.com@https://mirrors.aliyun.com@g" sources.list
+sudo sed -i "s@http://.*security.ubuntu.com@https://mirrors.aliyun.com@g" sources.list
+```
+
 ## 先说说吧
 
 在服务端安装完成 docker，我坚持了之前的一个思路，按照阿里源的教程开始，但是我忽视了一点，在 Ubuntu20.04 可以的，但是在 Ubuntu22.04 可不行，apt-key 的废弃让我颇为头疼，在上午的一阵操作下，我算是弄明白了，但是，明白问题不一定有修复问题的方法，大多数时候我只是知道这里有坑，退回去在走一遍时避开他而已。

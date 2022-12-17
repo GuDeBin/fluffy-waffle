@@ -103,3 +103,7 @@ gitee 注定失败，心疼它的尝试，政治至上的原则扼杀太多的�
 删除现有的 ssh 和新增的配置文件 config
 
 按照 GitHub 的新增 ssh 方式进行
+
+## 最新
+
+重新生成 ssh 密钥无效，依旧无法连接到 GitHub 上，只有在 config 中配置通过 https 端口建立 ssh 连接才可以连接，但是 Gitee 却没有问题

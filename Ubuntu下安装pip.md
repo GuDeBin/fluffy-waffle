@@ -20,4 +20,6 @@ sudo apt install python3-pip
 
 ```sh
 pip3 --version
+# or
+pip --version
 ```

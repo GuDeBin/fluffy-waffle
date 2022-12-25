@@ -50,3 +50,12 @@ sudo apt update && sudo apt upgrade -y
 这次遇到的问题并不是源的问题，而是我删除了一些文件，实在是找不到相对应的解决问题，在 PowerShell 的 issue 中有相应的问题，但是并没有相应的解决，只有一个我已经习惯了的描述
 
 这个真的触发了我固执，我还是想重置电脑，不过当居家办公结束时我就可以使用保留个人文件的方式来重置电脑
+
+## 新增方法
+
+这个是在清华源下看到的，不得不说清华源的教程是最贴心的，给清华源一个赞，感谢
+
+```sh
+sudo sed -i "s@http://.*archive.ubuntu.com@https://mirrors.aliyun.com@g" sources.list
+sudo sed -i "s@http://.*security.ubuntu.com@https://mirrors.aliyun.com@g" sources.list
+```

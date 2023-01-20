@@ -1,3 +1,7 @@
+# 使用 Github Action 部署项目到服务器
+
+先说结果，失败
+
 ```yml
 name: Continuous Deploy #action名称
 on: [push] #在推送的时候运行此action

@@ -95,3 +95,13 @@ public class App {
 终端输出 Hello World
 
 WSL 环境设置完毕
+
+## 2023 年 1 月 27 日更新
+
+今天再度将 java 环境设置一边，之前只是在 Java 的基础知识上摸爬滚打，没想到的是进入 spring 之后才知道为啥 IDEA 这样的重型编辑器会成为生产开发的首选，真是在生产环境没时间玩玩具，而是产出
+
+说下经过，在 spring initial 网站初始化后在本地根本跑不起来，这让我开始怀疑是 java 环境问题，（其实是我没有装 spring WEB 这个依赖）便开始重新安装 Java 环境，分为 window 环境下和 WSL-Ubuntu 下，最终解决也很简单，直接搜索 Java Microsoft 这两个关键字，直接就指向 Microsoft 的 Java 开发实践，下载安装 jdk 和设置 vscode 环境，简单明了
+
+教训啊，下次直接如此搜索，倒不至于走这么多弯路
+
+还下载了 Eclipse，不过因为不熟悉和中文安装包有点复杂，实在不想在搞了，不过在 wsl 上，同样的开发环境下，并不能类似 window 环境下使用，看样子 Java 开发还得在 window 环境下
